@@ -10,6 +10,10 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <head>
+
+      <!-- FLickity CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css" media="screen">
+
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
@@ -37,8 +41,6 @@
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="list">
           <li class="nav-item">
@@ -48,10 +50,10 @@
             <a class="nav-link" href="catalogue.html">Catalogue</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="about-us-page2.html">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -77,15 +79,45 @@
     My Shopping Cart
   </h3><br />
   <div id="my_cart">
-    <p id="cart_noitems">You will find your selected items here. <br /><br /> Nothing yet? <a href="index.html"
-        class="link">Start
+    <p id="cart_noitems"><strong>Oh my!</strong><br> Seems like there is nothing in your shopping cart yet. <br />
+      <br> <a href="catalogue.html" class="link" id="shop-now">Start
         shopping now!</a>
     </p>
   </div>
   <br />
   <div class="suggestions">
-    <h4> * Don't go without checking these too! :) * </h4>
+    <h4> * We think you may also like these! :) * </h4>
   </div>
+  <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+    <div class="gallery-cell">
+      <img src="images/facecream2.png" alt="Timeless Youth Face Cream" /><br>
+      <p class="cell-title">Timeless Youth Face Cream</p>
+    </div>
+    <div class="gallery-cell">
+      <img src="images/hairshampoo.png" alt="Golden Nourishing Shampoo" /><br>
+      <p class="cell-title">Golden Nourishing Shampoo</p>
+    </div>
+    <div class="gallery-cell">
+      <img src="images/hairconditioner.jpg" alt="Magical Repair Conditioner" /><br>
+      <p class="cell-title">Magical Repair Conditioner</p>
+    </div>
+    <div class="gallery-cell">
+      <img src="images/facecream1.jpg" alt="Radiant Goddess Face Cream" /><br>
+      <p class="cell-title">Radiant Goddess Face Cream</p>
+    </div>
+    <div class="gallery-cell">
+      <img src="images/bodyscrub.jpg" alt="Exfoliating Bliss Body Scrub" /><br>
+      <p class="cell-title">Exfoliating Bliss Body Scrub</p>
+    </div>
+  </div>
+
+  <!-- FLickity JS  -->
+  <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+
 </body>
+<br><br><br><br><br>
+<footer>
+  <p>&copy; 2024 Glowing Goddess</p>
+</footer>
 
 </html>
