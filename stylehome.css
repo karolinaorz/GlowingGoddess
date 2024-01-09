@@ -155,7 +155,7 @@ p {
   z-index: 9999;
   text-align: center;
   width: 40%;
-  height: 70%;
+  height: 80%;
 }
 
 .popup h3 {
@@ -379,4 +379,41 @@ h4 {
   #list {
     padding: 2px 2px 2px 2px !important;
   }
+}
+/* sale section */
+.column {
+    width: 33.33%;
+    padding: 5px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.price {
+width: 200px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    color: red;
+   
+}
+
+.sale {
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.old {
+    color: black;
 }
